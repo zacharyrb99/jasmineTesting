@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+.todo{
+    font-size: 40px;
+    color: yellow;
+}
+
+.todo:hover {
+    background-color: grey;
+    transition: all 200ms;
+}
+
+.completed{
+    color:gray;
+    text-decoration: line-through;
+}
+
+h1{
+    text-align:center;
+    transition: all 1000ms;
+}
+
+.big{
+    transform: scale(2);
+    color: green;
+}
+
+.small{
+    transform: scale(0.5);
+    color: red;
+}
