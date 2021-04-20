@@ -17,6 +17,6 @@ function makeLogo(text, color, size){
     let logo = document.createElement("h2");
     logo.innerText = text;
     logo.style.color = color;
-    logo.style.fontSize = size;
+    logo.style.fontSize = size + 'px';
     return logo;
 }
