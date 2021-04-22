@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href = 'memeGenerator.css'
+</head>
+<body>
+<head>
+    <h1>Meme Generator:</h1>
+    <form action = '' id = 'memeForm'>
+        <p>
+            <label for = ''>
+                Enter image link:
+                <input type = 'text' placeholder = 'Image Link' name = 'imagelink' size = '100'>
+            </label>
+        </p>
+        
+        <p>
+            <label for = ''>
+                Enter the text for the top of the meme:
+                <input type = 'text' placeholder = '(Optional) What text do you want on top?' name = 'toptext' size = '50'>
+            </label>
+        </p>
+        
+        <p>
+            <label for = ''>
+                Enter the text for the bottom of the meme:
+                <input type = 'text' placeholder = '(Optional) What text do you want on bottom?' name = 'bottomtext' size = '50'>
+            </label>
+        </p>
+
+        <input type = 'submit' id = 'submit'>
+           
+    </form>
+
+    <h2>Your Meme(s):</h2>
+</head>
+    <section id = results>
+
+    </section>
+    <script src = 'memeGenerator.js'></script>
+</body>
+</html>
