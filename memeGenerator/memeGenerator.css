@@ -1,0 +1,35 @@
+body{
+    background-color: lightgray;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 40px;
+}
+ 
+input{
+     margin: 5px;
+}
+
+p{
+    text-align: center;   
+}
+
+#submit{
+    transform:scale(1.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+}
+
+.memeStyle{
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: absolute;
+    font-size: 25px;
+}
