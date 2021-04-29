@@ -30,7 +30,7 @@ describe('Payments Tests', function(){
         expect(curTdList[0].innerText).toBe('$240');
         expect(curTdList[1].innerText).toBe('$50');
         expect(curTdList[2].innerText).toBe('%21');
-        expect(curTdList[3].innerText).toBe('X');
+        expect(curTdList[3].innerText).toBe('delete');
     });
 
     it('should test the shift summary', function(){

@@ -20,7 +20,7 @@ describe("Servers tests", function() {
     expect(currentTdList.length).toBe(3);
     expect(currentTdList[0].innerText).toBe('Zach');
     expect(currentTdList[1].innerText).toBe('$0.00');
-    expect(currentTdList[2].innerText).toBe('X');
+    expect(currentTdList[2].innerText).toBe('delete');
   });
 
   afterEach(function() {

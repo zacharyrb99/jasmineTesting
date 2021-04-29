@@ -25,21 +25,21 @@ function appendTd(tr, value) {
 }
 
 // append delete button and click handler for removing server from allServers and DOM td
-function appendDeleteBtn(tr, type) {
+function appendDeleteButton(tr, type) {
   let newTd = document.createElement('td');
-  newTd.className = 'deleteBtn';
-  newTd.innerText = 'X';
+  newTd.className = 'deleteButton';
+  newTd.innerText = 'delete';
 
-  newTd.addEventListener('click', removeEle);
+  newTd.addEventListener('click', removeDeleteButton);
 
   tr.append(newTd);
 }
 
-function removeEle(evt) {
-  let ele = evt.target.closest('tr');
+function removeDeleteButton(e) {
+  let deleteButton = e.target.closest('tr');
 
-  delete allServers[ele.id];
+  delete allServers[deleteButton.id];
 
-  ele.parentNode.removeChild(ele);
+  deleteButton.parentNode.removeChild(deleteButton);
   updateServerTable();
 }

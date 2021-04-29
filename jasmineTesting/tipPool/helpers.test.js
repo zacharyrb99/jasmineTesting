@@ -32,6 +32,13 @@ describe('Helpers tests',function(){
         expect(calculateTipPercent(240, 50)).toBe(21);
     });
 
+    it('should make delete button and append', function(){
+        let newTr = document.createElement('tr');
+        appendDeleteButton(newTr);
+        expect(newTr.children.length).toBe(1);
+        expect(newTr.firstChild.innerHTML).toBe('delete');
+    });
+
     afterEach(function(){
         tipAmtInput.value = '';
         billAmtInput.value = '';
